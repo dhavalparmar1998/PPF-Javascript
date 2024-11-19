@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#calculateBtn {
+    background-color: #28a745;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+#calculateBtn:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+form {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+}
+
+.result-box {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+}
+
+.form-group label {
+    color: #ffffff;
+}
+
+.table {
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+.table thead {
+    background: #28a745;
+}
+
+.table-hover tbody tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPF Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">PPF Calculator</h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                <form id="ppfForm" class="p-4 rounded shadow">
+                    <div class="form-group">
+                        <label for="principal">Principal Amount</label>
+                        <input type="text" class="form-control" id="principal" placeholder="Enter principal amount">
+                    </div>
+                    <div class="form-group">
+                        <label for="rate">Interest Rate (in %)</label>
+                        <input type="text" class="form-control" id="rate" placeholder="Enter interest rate">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time Period (in years)</label>
+                        <input type="text" class="form-control" id="time" placeholder="Enter time period">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="calculateBtn">Calculate PPF</button>
+                </form>
+            </div>
+        </div>
+        <div class="mt-4 text-center result-box p-4 rounded shadow">
+            <h2 id="ppfResult"></h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Year</th>
+                            <th>Principal (₹)</th>
+                            <th>Interest (₹)</th>
+                            <th>Total Amount (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ppfTableBody">
+                    </tbody>
+                </table>
+            </div>
+            <div class="chart-container">
+                <canvas id="ppfChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
